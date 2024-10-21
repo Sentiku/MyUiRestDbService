@@ -33,10 +33,10 @@
         </thead>
         <tbody>
         <tr th:each="student: ${students}">
-            <td th:text="${student.surname}" />
-            <td th:text="${student.name}" />
-            <td th:text="${student.faculty}" />
-            <td th:text="${student.age}" />
+            <td th:text="${student.surname}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.faculty}"></td>
+            <td th:text="${student.age}"></td>
             <td>
                 <a th:href="@{/showUpdateForm(studentId=${student.id})}" class="btn btn-info">Update</a>
 
